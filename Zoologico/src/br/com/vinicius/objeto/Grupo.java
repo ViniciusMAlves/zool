@@ -15,8 +15,8 @@ public class Grupo {
     private String nome;
     private String descricao;
 
-    public Grupo(int id, String nome, String descricao) {
-        this.id = id;
+    public Grupo( String nome, String descricao) {
+        this.id=0;
         this.nome = nome;
         this.descricao = descricao;
     }
@@ -47,7 +47,7 @@ public class Grupo {
 
     @Override
     public String toString() {
-        return "Grupo" + "\n id=" + id + ",\n nome=" + nome + ",\n descrição=" + descricao ;
+        return "\nGrupo:" + " id=" + id + ", nome=" + nome + "," + descricao ;
     }
 
 }

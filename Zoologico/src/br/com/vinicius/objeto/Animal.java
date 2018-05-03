@@ -16,8 +16,8 @@ public abstract class Animal {
     private String descricao;
     private char status;
 
-    public Animal(int id, Grupo grupo, String descricao, char status) {
-        this.id = id;
+    public Animal( Grupo grupo, String descricao, char status) {
+        this.id = 0;
         this.grupo = grupo;
         this.descricao = descricao;
         this.status = status;
@@ -57,7 +57,7 @@ public abstract class Animal {
 
     @Override
     public String toString() {
-        return "Animal" + "\n id=" + id + ",\n grupo=" + grupo + ",\n descrição=" + descricao + ",\n status=" + status ;
+        return "\nAnimal:" + " id=" + id + ", grupo=" + grupo + ", descrição=" + descricao + ", status=" + status ;
     }
 
 }

@@ -40,7 +40,12 @@ public class Zoologico {
     
     @Override
     public String toString() {
-        return "Zoologico" + "\n id=" + id + ",\n animais=" + animais ;
+        String listaAnimais=" ";
+        for (Animal animal : animais) {
+            listaAnimais += animal.getDescricao() + "\n";
+            
+        }
+        return "\nZoologico:" + " id=" + id + ", " + animais ;
     }
 
 }

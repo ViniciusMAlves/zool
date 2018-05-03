@@ -18,7 +18,7 @@ public class Lobo extends Animal {
     private Date dataNascimento;
 
     public Lobo(float peso, float tamanho, Date dataNascimento, int id, Grupo grupo, String descrição, char status) {
-        super(id, grupo, descrição, status);
+        super( grupo, descrição, status);
         this.peso = peso;
         this.tamanho = tamanho;
         this.dataNascimento = dataNascimento;
@@ -50,7 +50,7 @@ public class Lobo extends Animal {
 
     @Override
     public String toString() {
-        return "Lobo" + "\n peso=" + peso + ",\n tamanho=" + tamanho + ",\n dataNascimento=" + dataNascimento ;
+        return super.toString()+ "\nLobo:" + " peso=" + peso + ", tamanho=" + tamanho + ", dataNascimento=" + dataNascimento ;
     }
 
 }
